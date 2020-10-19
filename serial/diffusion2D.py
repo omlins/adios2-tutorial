@@ -15,7 +15,7 @@ c       = 1000;                              # thermal capacity
 # Numerics
 nx      = 256;                               # x resol
 ny      = nx;                                # y resol
-nt      = 5000;                              # number of time steps
+nt      = 10000;                             # number of time steps
 # Pre-calculation
 dx      = lx/(nx-1);                         # cell size
 dy      = ly/(nx-1);                         # cell size
@@ -57,6 +57,7 @@ for it in range(nt):
 	    engine.BeginStep()
 	    engine.Put(T_id, T)
 	    engine.EndStep()
+	    print('Time step ' + str(it) + '...')
 	t            = t + dt;
 	Kx           = 0.5*(K[1:,1:-1] + K[:-1,1:-1]);
 	Ky           = 0.5*(K[1:-1,1:] + K[1:-1,:-1]);
