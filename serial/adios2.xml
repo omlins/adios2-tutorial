@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<adios-config>
+
+    <io name="writerIO">
+        <engine type="BP4">
+            <!-- BP4/SST engine parameters -->
+            <parameter key="OpenTimeoutSecs" value="10.0"/>
+            <parameter key="SubStreams" value="128"/>
+        </engine>
+    </io>
+
+    <io name="readerIO">
+        <engine type="BP4">
+            <!-- BP4/SST engine parameters -->
+            <parameter key="OpenTimeoutSecs" value="10.0"/>
+            <parameter key="SubStreams" value="128"/>
+        </engine>
+    </io>
+
+</adios-config>
+
