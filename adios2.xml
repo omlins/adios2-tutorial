@@ -20,6 +20,14 @@
             <!-- BP4/SST engine parameters -->
             <parameter key="OpenTimeoutSecs" value="100.0"/>
             <parameter key="SubStreams" value="128"/>
+             
+            <!--
+            <variable name=“temperature">
+               <operation type=“sz">
+                   <parameter key=“accuracy" value=“0.0001"/>
+               </operation> 
+            </variable>
+            -->
         </engine>
     </io>
 
