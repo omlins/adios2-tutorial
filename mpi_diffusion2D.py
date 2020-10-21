@@ -89,7 +89,7 @@ for it in range(nt):
         T_nohalo[:] = T[1:-1, 1:-1]                              # Copy data removing the halo
         engine.BeginStep()                                       # Begin ADIOS2 write step
         engine.Put(T_id, T_nohalo)                               # Add T (without halo) to variables for writing
-        engine.EndStep()                                         # End ADIOS2 write step (includes normally writing)
+        engine.EndStep()                                         # End ADIOS2 write step (includes normally the actual writing of data)
         print('Time step ' + str(it) + '...')
     qTx[:]       = -lam*np.diff(T[:,1:-1],axis=0)/dx             # Fourier's law of heat conduction: q_x   = -λ δT/δx
     qTy[:]       = -lam*np.diff(T[1:-1,:],axis=1)/dy             # ...                               q_y   = -λ δT/δy
