@@ -74,10 +74,10 @@ nxy_g_nohalo = [nx_g-2, ny_g-2]                                    # ...        
 start        = [coords[0]*nxy_nohalo[0], coords[1]*nxy_nohalo[1]]  # ...              start
 T_nohalo     = np.zeros(nxy_nohalo)                                # Prealocate array for writing temperature
 # (intialize ADIOS2, io, engine and define the variable temperature)
-adios  = adios2.ADIOS(configFile="adios2.xml", comm=comm)
-io     = adios.DeclareIO("writerIO")
-T_id   = io.DefineVariable("temperature", T, nxy_g_nohalo, start, nxy_nohalo, adios2.ConstantDims)
-engine = io.Open("diffusion2D.bp", adios2.Mode.Write)
+adios  = adios2.ADIOS(configFile="adios2.xml", comm=comm)                                           # Use the configurations defined in "adios2.xml"...
+io     = adios.DeclareIO("writerIO")                                                                # ... in the section "writerIO"
+T_id   = io.DefineVariable("temperature", T, nxy_g_nohalo, start, nxy_nohalo, adios2.ConstantDims)  # Define the variable "temperature"
+engine = io.Open("diffusion2D.bp", adios2.Mode.Write)                                               # Open the file/stream "diffusion2D.bp"
 
 # Time loop
 nsteps = 50                                                      # Number of times data is written during the simulation
