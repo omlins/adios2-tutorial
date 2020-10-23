@@ -11,7 +11,7 @@ The ADIOS2 tutorial covers the following topics:
 ## A full in-situ visualization workflow example
 
 The tutorial is constructed around a concise and polished example which enables a full in-situ visualization workflow. It consists of:
-- [mpi_diffusion2D.py](example/mpi_diffusion2D.py): a distributed 2-D heat diffusion simulation code which is programmed in a single Python for simplicity sake
+- [mpi_diffusion2D.py](example/mpi_diffusion2D.py): a distributed 2-D heat diffusion simulation code which is programmed in a single Python for simplicity's sake
 - [diffusion2D_visualization.ipynb](example/diffusion2D_visualization.ipynb): a Python Jupyter notebook enabling both file-based and in-situ visualisation
 - [adios2.xml](example/adios2.xml): an ADIOS2 configuration file enabling to switch between file I/O and data staging for in-situ visualisation
 
