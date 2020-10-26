@@ -36,7 +36,7 @@ The tutorial demonstrates that, using ADIOS2, it is possible to straigthforwardl
 
 ## Acknowledgements
 
-I would like to thank to thank to Greg Eisenhauer<sup>1</sup>, Norbert Podhorszki<sup>2</sup>, William F. Godoy<sup>2</sup> and Scott Klasky<sup>2</sup> for their highly reactive support during the development of this tutorial.
+I would like to thank to thank to Greg Eisenhauer<sup>1</sup>, Norbert Podhorszki<sup>2</sup>, William F. Godoy<sup>2</sup> and Scott Klasky<sup>2</sup> for their highly reactive support and interesting discussions during the development of this tutorial.
 
 <sup>1</sup> Georgia Institute of Technology | <sup>2</sup> Oak Ridge National Laboratory
 
