@@ -20,6 +20,7 @@ The repository contains also an alternative version of the visualization noteboo
 ## Demo videos showcasing interesting use cases
 
 [Four commented demos at the end of the ADIOS2 tutorial](https://youtu.be/gl_vIfjvTkc?t=2487) illustrate ADIOS2 file I/O and the in-situ visualization workflow. There is [an additional demo at the very end of the webinar](https://youtu.be/gl_vIfjvTkc?t=4971) (presented by Dr. Jean Favre) which shows that the above example can be straigthforwardly extended to visualize with ParaView instead of Matplotlib. Here is a little preview on one of the full in-situ visualization workflow demos:
+
 ![in-situ visualization preview](insitu_preview.gif)
 
 Even without comments, the demo videos should be quite understandable and are therefore listed here. The demo videos showcase five different use cases (the 5th video was added after the webinar):
