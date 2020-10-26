@@ -11,15 +11,15 @@ The ADIOS2 tutorial covers the following topics:
 ## A full in-situ visualization workflow example
 
 The tutorial is constructed around a concise and polished example which enables a full in-situ visualization workflow. It consists of:
-- [mpi_diffusion2D.py](example/mpi_diffusion2D.py): a distributed 2-D heat diffusion simulation code which is programmed in a single Python for simplicity sake
+- [mpi_diffusion2D.py](example/mpi_diffusion2D.py): a distributed 2-D heat diffusion simulation code which is programmed in a single Python for simplicity's sake
 - [diffusion2D_visualization.ipynb](example/diffusion2D_visualization.ipynb): a Python Jupyter notebook enabling both file-based and in-situ visualisation
-- [adios2.xml](example/adios2.xml): an ADIOS2 configuration file enabling to switch between file I/O and data staging for in-situ visualisation
+- [adios2.xml](example/adios2.xml): an ADIOS2 configuration file enabling to switch between file I/O and data staging for in-situ visualization
 
 The repository contains also an alternative version of the visualization notebook, which uses the ADIOS2 high-level Python API: [diffusion2D_visualization_hl.ipynb](example/diffusion2D_visualization_hl.ipynb).
 
 ## Demo videos showcasing interesting use cases
 
-[Four commented demos at the end of the ADIOS2 tutorial](https://youtu.be/gl_vIfjvTkc?t=2487) illustrate ADIOS2 file I/O and the in-situ visualization workflow. Here is a little preview on the full in-situ visualization workflow demo:
+[Four commented demos at the end of the ADIOS2 tutorial](https://youtu.be/gl_vIfjvTkc?t=2487) illustrate ADIOS2 file I/O and the in-situ visualization workflow. There is [an additional demo at the very end of the webinar](https://youtu.be/gl_vIfjvTkc?t=4971) (presented by Dr. Jean Favre) which shows that the above example can be straigthforwardly extended to visualize with ParaView instead of Matplotlib. Here is a little preview on one of the full in-situ visualization workflow demos:
 ![in-situ visualization preview](insitu_preview.gif)
 
 Even without comments, the demo videos should be quite understandable and are therefore listed here. The demo videos showcase five different use cases (the 5th video was added after the webinar):
@@ -29,6 +29,9 @@ Even without comments, the demo videos should be quite understandable and are th
 4. [run a simulation using the rendezvous and blocking if queue full policies, visualize in-situ from a jupyter notebook](demos/4_adios2_sst_read_write_and_visu_singleproc_block_queue5.mp4)
 5. [run a simulation using the no rendevous and discard if queue full policies, monitoring in-situ from a jupyter notebook](demos/5_adios2_sst_read_write_and_monitoring_singleproc_discard_rendevous0.mp4)
 
+## Conclusion
+
+The tutorial demonstrates that, using ADIOS2, it is possible to straigthforwardly visualize or monitor the output of an MPI application in-situ on a Jupyter notebook. The presented workflow enables even a visualization with ParaView on the Jupyter notebook.
 
 ## Acknowledgements
 
