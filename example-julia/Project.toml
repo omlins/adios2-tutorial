@@ -1,0 +1,9 @@
+name = "ADIOS2Tutorial"
+uuid = "7bb01ee6-02dc-4e7e-8c69-90a439f2b3b1"
+authors = ["Erik Schnetter <schnetter@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+ADIOS2 = "e0ce9d3b-0dbd-416f-8264-ccca772f60ec"
+MPI = "da04e1cc-30fd-572f-bb4f-1f8673147195"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
